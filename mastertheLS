@@ -1,2 +1,2 @@
-ls -p -m -t
+ls -t -m -p |sed 's/ //g'
 
