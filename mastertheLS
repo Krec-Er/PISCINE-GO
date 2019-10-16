@@ -1,3 +1,2 @@
-echo "mastertheLS,who-are-you.sh,to-git-or-not-to-git.sh,make-it-better/,A/,0/"
-
+ls -p -m -t
 
