@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 import "github.com/01-edu/z01"
 
@@ -15,7 +15,7 @@ func printcomb() {
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
 					}
-				}	
+				}
 			}
 		}
 	}
