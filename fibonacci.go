@@ -9,6 +9,6 @@ func Fibonacci(nb int) int {
 	} else if nb == 1 {
 		return 1
 	} else {
-		return fibonacci(nb-1) + fibonacci(nb-2)
+		return Fibonacci(nb-1) + Fibonacci(nb-2)
 	}
 }
