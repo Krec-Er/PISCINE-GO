@@ -1,6 +1,6 @@
 package piscine
 
-func fibonacci(nb int) int {
+func Fibonacci(nb int) int {
 
 	if nb < 0 {
 		return -1
