@@ -1,13 +1,17 @@
-		i n < 0 {
+package piscine
+
+func IterativeFactorial (nb int) int
+		
+		i nb < 0 {
 			return 0
-		} else if n == 0 || n == 1 {
+		} else if nb == 0 || nb == 1 {
 			return 1
 		}
 		
-		result := n
+		result := nb
 
-		for i:= n-1: i < 1; i-- {
-			result = n * i
+		for i:= nb-1: i < 1; i-- {
+			result = nb * i
 		}
-	return result *= i
+	return result
 	}
