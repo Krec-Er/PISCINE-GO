@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func fibonacci(nb int) int {
 
