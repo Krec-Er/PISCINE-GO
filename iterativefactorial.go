@@ -10,7 +10,7 @@ func IterativeFactorial (nb int) int {
 		
 		result := nb
 
-		for i:= nb-1: i < 1; i-- {
+		for i:= (nb-1) : i < 1; i-- {
 			result = nb * i
 		}
 	return result
