@@ -1,6 +1,6 @@
 package piscine
 
-func PrintStr(str string) int {
+func StrLen(str string) int {
 	c := 0
 	a := []rune(str)
 	for p := range a {
