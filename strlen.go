@@ -1,10 +1,10 @@
 package piscine
 
 func PrintStr(str string) int {
+	c := 0
 	a := []rune(str)
-	var len int
-	for i := range a {
-		len = i + 1
+	for p,_ := range a{
+		c =p+1
 	}
-	return len
+	return c
 }
