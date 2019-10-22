@@ -27,10 +27,6 @@ func intToDigits(n int) (digits []int) {
 	return
 }
 
-package piscine
-
-import "github.com/01-edu/z01"
-
 func PrintNbrInOrder(n int) {
 	if n > 0 {
 		finalslice := SortIntTable(ToSlice(n))
