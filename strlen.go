@@ -1,9 +1,10 @@
 package piscine
 
 func PrintStr(str string) int {
-	a := 0
-	len := [] run (str) {
-		for index, _ := range len 
+	c:=0
+	a:=[]rune(str)
+	for p,_ := range a{
+	c =p+1
 	}
-	return index + 1
+	 return c
 }
