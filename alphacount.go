@@ -1,12 +1,13 @@
 package piscine
 
 func AlphaCount(str string) int {
-	count := 0
-	for i := 0; i < len(str); i++ {
-		count++
-		if !(str[i] >= 'A') && (str[i] <= 'Z') && !(str[i] >= 'a') && (str[i] <= 'z') {
-			count--
-		}
-	}
-	return count
+    counter := 0
+	slice := []rune(str)
+  	for _, word	:= range slice {			 
+        if word >= 65 && word <= 92 || word >= 97 && word <= 122 {
+             counter ++
+        }
+    }
+    return counter
 }
+
