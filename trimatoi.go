@@ -19,4 +19,3 @@ func TrimAtoi(s string) int {
 	}
 	return sum
 }
-f
