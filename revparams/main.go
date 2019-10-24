@@ -11,9 +11,9 @@ func main() {
 	for index := range funcname {
 		index = index
 	}
-	for i := 0; i <= index, i++ {
-		funcname[i] = funname [index-i]
-	} 
+	for i, j := 0, index; i < j; i, j = i+1, j-1 {
+		funcname[i], funcname[j] = funcname[j], funcname[i]
+	}
 	for _, argument := range funcname {
 		for _, word := range argument {
 			z01.PrintRune(word)
