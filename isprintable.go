@@ -6,9 +6,8 @@ func IsPrintable(str string) bool {
 	}
 	Runes := []rune(str)
 	for _, word := range Runes {
-		if (word >= 'A' && word <= 'Z') ||
-			(word >= 'a' && word <= 'z') {
-			continue
+		if (word >= 0 && word <= 32) {
+					continue
 		} else {
 			return false
 		}
