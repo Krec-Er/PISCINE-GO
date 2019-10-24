@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func Index(s string, toFind string) int {
 	n := 0
 	j := []rune(s)
@@ -19,10 +17,5 @@ func Index(s string, toFind string) int {
 			return (i)
 		}
 	}
-}
-
-func main() {
-	fmt.Println(Index("Hello!", "l"))
-	fmt.Println(Index("Salut!", "alu"))
-	fmt.Println(Index("Ola!", "hOl"))
+	
 }
