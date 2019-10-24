@@ -6,18 +6,14 @@ import (
 )
 
 func main() {
-	funcname := os.Args[1:]
-	var index int
-	for index := range funcname {
-		index = index
-	}
-	for i, j := 0, index; i < j; i, j = i+1, j-1 {
-		funcname[i], funcname[j] = funcname[j], funcname[i]
-	}
-	for _, argument := range funcname {
-		for _, word := range argument {
-			z01.PrintRune(word)
+	arguments := os.Args
+	strings := []string(arguments)
+	for index, strs := range strings {
+		if index >= 1 {
+			runes := []rune(strs)
+			for _, runess := range runes {
+				z01.PrintRune(runess)
+			}
+			z01.PrintRune(10)
 		}
-		z01.PrintRune(10)
 	}
-}
