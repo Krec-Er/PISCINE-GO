@@ -6,10 +6,8 @@ import (
 )
 
 func main() {
-	argument := os.Args
-	str := argument[0]
-	funcname := []rune(str)
-	for _, word := range funcname {
+	argument := os.Args[0]
+	for _, word := range argument {
 		z01.PrintRune(word)
 	}
 	z01.PrintRune(10)
