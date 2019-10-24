@@ -1,16 +1,14 @@
 package piscine
 
 func IsAlpha(str string) bool {
-	Runes := []rune(str)
-	len := 0
-	for i := range Runes {
-		i = i
-		len++
+	if str == "" {
+		return false
 	}
-	for j := 0; j <= len; j++ {
-		if (Runes[j] >= 'A' && Runes[j] <= 'Z') ||
-			(Runes[j] >= '0' && Runes[j] <= '9') ||
-			(Runes[j] >= 'a' && Runes[j] <= 'z') {
+	Runes := []rune(str)
+	for _, word := range Runes{
+		if (word >= 'A' && word <= 'Z') ||
+			word >= '0' && word <= '9') ||
+			(word >= 'a' && word <= 'z') {
 			continue
 		} else {
 			return false
