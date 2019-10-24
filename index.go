@@ -16,6 +16,7 @@ func Index(s string, toFind string) int {
 		if toFind == s[i:i+k] {
 			return (i)
 		}
-	}
+	} else {
 	return -1
+	}
 }
