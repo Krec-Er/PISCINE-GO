@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func Capitalize(s string) string {
 	Runes := []rune(s)
@@ -18,7 +20,14 @@ func Capitalize(s string) string {
 			} else {
 				Runes[j] = Runes[j] - 32
 			}
-		}
+		} else if Runes [j]>= 'A' && Runes[j]<= 'Z' {
+			if (Runes[j-1] >= 'A' && Runes[j-1] <= 'Z') || (Runes[j-1] >= '0' && Runes[j-1] <= '9') || (Runes[j-1] >= 'a' && Runes[j-1] <= 'z') {
+				Runes[j] = Runes [j]-32
+			}
 	}
 	return string(Runes)
+}
+
+func main() {
+	fmt.Println(Capitalize("Hello! HOW are you? How+are+things+4you? Gy!~EYFc)j(r{"))
 }
