@@ -6,7 +6,7 @@ func IsLower(str string) bool {
 	}
 	Runes := []rune(str)
 	for _, word := range Runes {
-		if (word >= 'a' && word <= 'z') {
+		if word >= 'a' && word <= 'z' {
 			continue
 		} else {
 			return false
